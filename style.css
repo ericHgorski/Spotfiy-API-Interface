@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway";
+}
+
+body {
+    background-color: #1269aa;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    color: #6dc993;
+    font-size: 60px;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+header > * {
+    margin: 5px;
+}
+
+input {
+    height: 30px;
+}
+
+select {
+    height: 30px;
+    width: 100px;
+    font-size: 25px;
+}
+
+#submit-btn {
+    border-radius: 2%;
+    background-color: #6dc993;
+    color: #faf8e8;
+    height: 30px;
+    width: 80px;
+    font-size: 25px;
+}
+
+#subheader {
+    display: flex;
+    justify-content: center;
+}
+
+#subheader span {
+    margin-top: 50px;
+    color: #de5a41;
+}
+
+#results-container {
+    width: 90%;
+    margin: 15px auto;
+    display: grid;
+    grid-template-rows: repeat(2, minmax(150px, max-content));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-auto-rows: min-content;
+    justify-items: center;
+}
+
+.music {
+    display: grid;
+    grid-template-rows: 40px 200px;
+    width: 100%;
+    background-color: #de5a41;
+    margin: 10px;
+    border-radius: 2%;
+    max-width: 200px;
+    border: white 6px solid;
+    overflow: hidden;
+    text-align: center;
+}
+
+.itemName {
+    text-decoration: none;
+    color: white;
+    margin-top: 5px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    color: #0d383f;
+}
+
+#more-btn {
+    font-size: 15px;
+    visibility: hidden;
+    height: 30px;
+    width: 200px;
+    background-color: #6dc993;
+    color: #faf8e8;
+}

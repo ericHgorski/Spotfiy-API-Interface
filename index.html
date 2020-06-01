@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1> SPOTIFY SEARCH</h1> 
+    
+    <header>
+        <input type="text" name="user-input"/>
+            
+        <select>
+            <option value="artist">artist</option>
+            <option value="album">album</option>
+        </select>
+
+        <button id="submit-btn">GO</button>
+    </header>
+
+    <div id="subheader"></div>
+
+    <main>
+        <div id="results-container"></div>
+        
+    </main>
+
+    <footer>
+        <button id='more-btn'>MORE</button>
+    </footer>
+    
+    <script id="musicResults" type="text/x-handlebars-template">
+            {{#items}}
+                <div class="music">
+                    <a class="itemName" href = {{itemURL}} > {{itemName}} </a>
+                    <a href = {{itemURL}}> <img src={{itemImgUrl}}></a>
+                </div>
+            {{/items}}
+        </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
